@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug
+  namespace: roboshop
+  labels:
+    name: debug
+    project: roboshop
+spec:
+  containers: 
+  - name: debug
+    image: katikireddy/debug:v1
+    ports:
+    - containerPort: 80
+
